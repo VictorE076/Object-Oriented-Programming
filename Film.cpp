@@ -8,6 +8,10 @@ Data::Data(const int& zi_p, const char luna_p[21], const int& an_p)
     strcpy_s(luna, luna_p);
     an = an_p;
 }
+Data::Data(const Data& ob)
+{
+    *this = ob;
+}
 Data::~Data()
 {
     ///cout << "Se apeleaza destructorul pentru un obiect de tip <Data>!\n";
@@ -108,6 +112,10 @@ Actor::Actor(const string& nume_p, const int& zi_p, const char luna_p[21], const
     nume = nume_p;
     data_nasterii = Data(zi_p, luna_p, an_p);
 }
+Actor::Actor(const Actor& ob)
+{
+    *this = ob;
+}
 Actor::~Actor()
 {
     ///cout << "Se apeleaza destructorul pentru un obiect de tip <Actor>!\n";
@@ -165,6 +173,10 @@ Film::Film(const char titlu_p[51], const int& nrActori_p)
 {
     strcpy_s(titlu, titlu_p);
     nrActori = nrActori_p;
+}
+Film::Film(const Film& ob)
+{
+    *this = ob;
 }
 Film::~Film()
 {

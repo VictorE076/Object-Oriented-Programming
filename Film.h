@@ -19,6 +19,7 @@ protected:
 public:
     Data();
     Data(const int& zi_p, const char luna_p[21], const int& an_p);
+    Data(const Data& ob);
     ~Data();
 
 
@@ -52,6 +53,7 @@ public:
     Actor();
     Actor(const string& nume_p, const Data& data_nasterii_p);
     Actor(const string& nume_p, const int& zi_p, const char luna_p[21], const int& an_p);
+    Actor(const Actor& ob);
     ~Actor();
 
 
@@ -86,6 +88,7 @@ public:
     Film();
     Film(const char titlu_p[51]);
     Film(const char titlu_p[51], const int& nrActori_p);
+    Film(const Film& ob);
     ~Film();
 
 

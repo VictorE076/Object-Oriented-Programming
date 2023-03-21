@@ -20,6 +20,13 @@ int main()
     f3 = f2;
     cout << f3;
 
+
+    /*
+    Data d(d2);
+    Actor a(a1);
+    Film f(f3);
+    */
+
     ////
     /*
     f1 + a1;
